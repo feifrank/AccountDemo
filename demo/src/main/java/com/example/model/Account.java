@@ -11,6 +11,7 @@ import java.util.Date;
 @Validated
 public class Account {
 
+    //to use domain key is more user friendly, the change of the key data it self could be handled by specific logic if necessary such as changeover
     @Id
     @NotNull
     @Column(name = "identity_id", unique = true, nullable = false)
